@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.makegrid {
+  display: flex;
+}
+.left {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 3cm;
+}
+.right {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.head1 {
+  font-size: 2cm;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  margin: 50px;
+  text-shadow: 0px 1px 6px #ffbcbc;
+  position: relative;
+  animation: moveXY 5s linear infinite;
+}
+@keyframes moveXY {
+  0% {
+    top: 0px;
+    left: 0px;
+    color: #fa779e;
+  }
+
+  50% {
+    top: 20px;
+    left: 0px;
+    color: #fc8cae;
+  }
+
+  100% {
+    top: 0px;
+    color: #ff5c8d;
+  }
+}
+.cont1 {
+  margin: 0cm;
+  padding: 0.3cm;
+}
+.fontsty {
+  font-size: 0.5cm;
+  margin: 3px;
+  font-family: "Poppins", sans-serif;
+}
+.person {
+  height: 577px;
+  width: 764px;
+}
+.hed2 {
+  font-size: 0.8cm;
+  color: #ff950a;
+}
+.unordlis li {
+  list-style-type: upper-roman;
+}
+
+.btn {
+  height: 1.6cm;
+  width: 6cm;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  background-color: orange;
+
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+
+  box-shadow: inset 1 1 0 2px rgba(255, 182, 45, 0.712);
+  color: white;
+  font-size: inherit;
+
+  position: relative;
+  vertical-align: middle;
+  font-size: 0.5cm;
+
+}
+.btn::before,
+.btn::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.draw {
+  transition: color 0.25s;
+}
+.draw::before,
+.draw::after {
+  border: 3px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.draw::before {
+  top: 0;
+  left: 0;
+}
+
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+
+
+
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.meet:hover {
+  background-color: white;
+  color:orange;
+  cursor: pointer;
+}
+
+.meet::after {
+  top: 0;
+  left: 0;
+}
+
+.meet:hover::before {
+  border-top-color: yellow;
+  border-right-color: yellow;
+}
+
+.meet:hover::after {
+  border-bottom-color:yellow;
+  border-left-color: yellow;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+}

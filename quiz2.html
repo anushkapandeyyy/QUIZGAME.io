@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainquizpage</title>
+    <link rel="stylesheet" href="quiz2.css">
+
+</head>
+<body>
+    <div class="container2">
+        <div class="quizbox">
+            <header>
+              <div class="timer">
+                  <div class="timertext">Time Left:</div>
+                  <div class="timersec">15</div>
+                  <div class="sec">s</div>
+              </div>
+            </header>
+    
+            <section>
+                <div class="questext question">What is ?</div>
+                <div class="optionlist">
+                    <ul class="unordlist">
+                        <li class="option" id="opt1" >
+                          <input type="radio" name="answer" id="ans1" class="answer">
+                          <label for="ans1" id="option1">OPTION 1</label>
+                        </li>
+                        <li class="option" id="opt2">
+                            <input type="radio" name="answer" id="ans2" class="answer">
+                            <label for="ans2" id="option2">OPTION 2</label>
+                        </li>
+                        <li class="option" id="opt3">
+                            <input type="radio" name="answer" id="ans3" class="answer">
+                            <label for="ans3" id="option3">OPTION 3</label>
+                        </li>
+                        <li class="option" id="opt4">
+                            <input type="radio" name="answer" id="ans4" class="answer">
+                            <label for="ans4" id="option4">OPTION 4</label>
+                        </li>
+                    </ul>
+                </div>
+                </section>
+    
+            <footer>
+                <div class="btn-container">
+                    <input type="submit" value="SUBMIT" id="button-blue" class="submit"/>
+                    <div class="ease"></div>
+                </div>            
+            </footer>
+
+            <div id="showscore" class="scorearea"></div>
+        </div>
+   
+    
+</body>
+<script src="quiz.js"></script>
+
+</html>
